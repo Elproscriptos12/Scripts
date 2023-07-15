@@ -1,0 +1,145 @@
+if not game:IsLoaded() then
+        
+    game.Loaded:Wait()
+        
+end
+
+if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
+    local bypass;
+        bypass = hookmetamethod(game, "__namecall", function(method, ...) 
+            if getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Ban then
+                return
+            elseif getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.AdminGUI then
+                return
+            elseif getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.WalkSpeedChanged then
+                return
+            end
+            return bypass(method, ...)
+        end)
+    end
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "ElmacanasHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Slap Hitbox And aura",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Slap Hitbox And Aura"
+})
+
+Tab:AddButton({
+    Name = "SlapHitbox",
+	Callback = function()
+    
+
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") ~= nil then
+
+
+
+                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.Size = Vector3.new(10,60,10)
+    
+    
+    
+                local pt = Instance.new("Part")
+                pt.Anchored = true
+                pt.Parent = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+                pt.Size = Vector3.new(10,60,10)
+                pt.CFrame = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.CFrame
+                local wd = Instance.new("WeldConstraint",pt)
+                wd.Part0 = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove
+                wd.Part1 = pt
+                pt.CanCollide = false
+                pt.Transparency = 1
+                pt.Material = "Neon"
+                pt.Anchored = false
+                pt.CastShadow = false
+                pt.Massless = true
+                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.Massless = true
+                local cool=false
+                pt.Touched:Connect(function(hit)
+                    if hit.Parent:FindFirstChild("Humanoid") ~= nil and hit.Parent ~= game.Players.LocalPlayer.Character then
+                        if hit.Parent:FindFirstChild("Reverse") == nil then
+                                if cool == false then
+                            cool = true
+                            game.ReplicatedStorage.b:FireServer(hit)
+                            cool = false
+                                
+                         end
+			         end
+                end
+			end)
+			game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+				onru = false
+			end)
+
+		end
+	end    
+})
+
+Tab:AddToggle({
+    Name = "Anti Void",
+    Default = false,
+    Callback = function(Value)
+
+game.Workspace.dedBarrier.CanCollide = Value
+    end    
+})
+Tab:AddToggle({
+    Name = "Anti Admins",
+    Default = false,
+    Callback = function(bool)
+antiAdmins = bool
+if bool == true then
+game.Players.PlayerAdded:Connect(function(Plr)
+if Plr:GetRankInGroup(9950771) and 2 <= Plr:GetRankInGroup(9950771) and antiAdmins then
+game.Players.LocalPlayer:Kick("Admin/High Rank Player Detected")
+end
+end)
+end
+end
+})
+
+Tab:AddToggle({
+                    Name = "Anti Ragdoll (Tip Reset Your Character)",
+                    Default = false,
+                    Callback = function(Value)
+if Value == true then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+wait(4)
+game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Changed:Connect(function()
+if game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Value == true and Value == true then
+repeat task.wait()
+game.Players.LocalPlayer.Character.Torso.Anchored = true
+until game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Value == false
+game.Players.LocalPlayer.Character.Torso.Anchored = false
+end
+end)
+                    end    
+                })
+
+                
+local Tab2 = Window:MakeTab({
+	Name = "LocalPlayer Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+   Tab2:AddSlider({
+       Name = "Walkspeed",
+           Min = 20,
+          Max = 1000,
+            Default = 20,
+        Color = Color3.fromRGB(0,162,255),
+          Increment = 1,
+            ValueName = "WS",
+             Callback = function(Value)
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+                Walkspeed = Value
+               end    
+               })
