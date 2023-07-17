@@ -41,14 +41,14 @@ Tab:AddButton({
 
 
 
-                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.Size = Vector3.new(10,60,10)
+                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.Size = Vector3.new(10,100,10)
     
     
     
                 local pt = Instance.new("Part")
                 pt.Anchored = true
                 pt.Parent = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
-                pt.Size = Vector3.new(10,60,10)
+                pt.Size = Vector3.new(10,100,10)
                 pt.CFrame = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove.CFrame
                 local wd = Instance.new("WeldConstraint",pt)
                 wd.Part0 = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Glove
@@ -143,3 +143,21 @@ local Tab2 = Window:MakeTab({
                 Walkspeed = Value
                end    
                })
+
+               Tab2:AddToggle({
+                Name = "Keep Walkspeed",
+                Default = false,
+                Callback = function(bool)
+            autoSet1 = bool
+                    if bool == true then
+                        while autoSet1 do
+                            task.wait()
+                            local Character = workspace:WaitForChild(game.Players.LocalPlayer.Name)
+                            if Character:FindFirstChild("Humanoid") ~= nil and Character.Humanoid.WalkSpeed ~= Walkspeed then
+                                Character:FindFirstChild("Humanoid").WalkSpeed = Walkspeed
+                            end
+                        end
+                    end
+                end    
+            })
+            
