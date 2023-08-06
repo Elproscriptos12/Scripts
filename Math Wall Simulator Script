@@ -1,3 +1,6 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Elpros Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
 local Tab = Window:MakeTab({
 	Name = "TelePort To Class",
 	Icon = "rbxassetid://4483345998",
