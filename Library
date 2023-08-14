@@ -469,7 +469,7 @@ function Library:CreateTab(name)
             ButtonRounded.Parent = Button
             ButtonRounded.Active = true
             ButtonRounded.AnchorPoint = Vector2.new(0.5, 0.5)
-            ButtonRounded.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+            ButtonRounded.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
             ButtonRounded.BackgroundTransparency = 1.000
             ButtonRounded.Position = UDim2.new(0.5, 0, 0.5, 0)
             ButtonRounded.Selectable = true
