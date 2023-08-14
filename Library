@@ -461,7 +461,7 @@ function Library:CreateTab(name)
             Button.ZIndex = 6
             Button.Font = Library.Theme.TextFont
             Button.Text = name
-            Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Button.TextColor3 = Color3.fromRGB(35, 35, 35)
             Button.TextSize = 15.000
             Button.ClipsDescendants = true
 
