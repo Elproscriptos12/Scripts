@@ -533,7 +533,7 @@ function Library:CreateTab(name)
 
             Toggle.Name = "Toggle"
             Toggle.Parent = NameToggle
-            Toggle.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+            Toggle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
             Toggle.BackgroundTransparency = 1.000
             Toggle.Position = UDim2.new(0, 161, 0, 7)
             Toggle.Size = UDim2.new(0, 20, 0, 20)
