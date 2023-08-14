@@ -282,14 +282,14 @@ function Library:CreateTab(name)
 
     NameTab.Name = (name .. "Tab")
     NameTab.Parent = Tabs
-    NameTab.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+    NameTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     NameTab.BackgroundTransparency = 1.000
     NameTab.Size = UDim2.new(1, 0, 1, 0)
     NameTab.ZIndex = 2
 
     NameTabButton.Name = (name .. "TabButton")
     NameTabButton.Parent = TabButtons
-    NameTabButton.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+    NameTabButton.BackgroundColor3 = Color3.fromRGB(191, 1, 1)
     NameTabButton.BackgroundTransparency = 1.000
     NameTabButton.Size = UDim2.new(0, 84, 0, 25)
     NameTabButton.ZIndex = 2
