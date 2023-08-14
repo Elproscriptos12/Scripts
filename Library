@@ -527,7 +527,7 @@ function Library:CreateTab(name)
             Title.ZIndex = 5
             Title.Font = Library.Theme.TextFont
             Title.Text = name
-            Title.TextColor3 = Color3.fromRGB(35, 35, 35)
+            Title.TextColor3 = Color3.fromRGB(195, 1, 1)
             Title.TextSize = 15.000
             Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -541,7 +541,7 @@ function Library:CreateTab(name)
             Toggle.AutoButtonColor = false
             Toggle.Font = Library.Theme.TextFont
             Toggle.Text = ""
-            Toggle.TextColor3 = Color3.fromRGB(35, 35, 35)
+            Toggle.TextColor3 = Color3.fromRGB(195, 1, 1)
             Toggle.TextSize = 14.000
 
             CheckboxOutline.Name = "CheckboxOutline"
