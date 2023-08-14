@@ -161,7 +161,7 @@ Topbar.ZIndex = 2
 
 UITabs.Name = "UITabs"
 UITabs.Parent = Main
-UITabs.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+UITabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UITabs.BackgroundTransparency = 1.000
 UITabs.ClipsDescendants = true
 UITabs.Size = UDim2.new(1, 0, 1, 0)
