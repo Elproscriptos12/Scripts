@@ -520,7 +520,7 @@ function Library:CreateTab(name)
             
             Title.Name = "Title"
             Title.Parent = NameToggle
-            Title.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+            Title.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
             Title.BackgroundTransparency = 1.000
             Title.Position = UDim2.new(0, 13, 0, 0)
             Title.Size = UDim2.new(0, 149, 0, 35)
