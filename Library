@@ -419,7 +419,7 @@ function Library:CreateTab(name)
             NameLabel.Size = UDim2.new(0, 197, 0, NameLabel.TextBounds.Y)
             NameLabel.ZIndex = 5
             NameLabel.Font = Library.Theme.TextFont
-            NameLabel.TextColor3 = Color3.fromRGB(35, 35, 35)
+            NameLabel.TextColor3 = Color3.fromRGB(195, 1, 1)
             NameLabel.TextSize = 15.000
 
             local function ChangeText(newtext)
