@@ -301,7 +301,7 @@ function Library:CreateTab(name)
     
     Title.Name = "Title"
     Title.Parent = NameTabButton
-    Title.BackgroundColor3 = Color3.fromRGB(195, 1, 1)
+    Title.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
     Title.BackgroundTransparency = 1.000
     Title.Size = UDim2.new(1, 0, 1, 0)
     Title.ZIndex = 2
