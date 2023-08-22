@@ -21,7 +21,6 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
  
      if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 9015014224 then
      loadstring(game:HttpGet('https://raw.githubusercontent.com/naproangel12/Scripts/main/New%20Library%20V3'))()
-     end
      elseif game.PlaceId == 9431156611 then
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/cheesynob39/SB-SR/main/Slap_Royale.lua")))()
 end
