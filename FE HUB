@@ -1,0 +1,446 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ElprosLibraryFE = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local X = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local CheckMark = Instance.new("ImageButton")
+local ToggledFo = Instance.new("Folder")
+local Toggled = Instance.new("TextLabel")
+local Effect = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Troll = Instance.new("ImageButton")
+local OP = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local XD = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Alert = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ElprosLibraryFE.Name = "ElprosLibraryFE"
+ElprosLibraryFE.Parent = game.CoreGui
+ElprosLibraryFE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ElprosLibraryFE
+Frame.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.546451867, 0, 0.48608309, 0)
+Frame.Size = UDim2.new(0, 390, 0, 216)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.236026198, 0)
+TextLabel.Size = UDim2.new(0, 337, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "ElproScript"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.Parent = TextLabel
+
+X.Name = "X"
+X.Parent = TextLabel
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.999718189, 0, 0.00177978515, 0)
+X.Size = UDim2.new(0, 53, 0, 50)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+UICorner_2.Parent = X
+
+ImageLabel.Parent = TextLabel
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.328571439, 0, -2.3874464, 0)
+ImageLabel.Size = UDim2.new(0, 148, 0, 119)
+ImageLabel.Image = "rbxassetid://2005276185"
+
+UICorner_3.Parent = Frame
+
+CheckMark.Name = "CheckMark"
+CheckMark.Parent = Frame
+CheckMark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckMark.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheckMark.BorderSizePixel = 0
+CheckMark.Position = UDim2.new(0.800000012, 0, 0.143518522, 0)
+CheckMark.Size = UDim2.new(0, 25, 0, 24)
+CheckMark.Visible = false
+CheckMark.Image = "rbxassetid://14513451750"
+
+ToggledFo.Name = "ToggledFo"
+ToggledFo.Parent = Frame
+
+Toggled.Name = "Toggled"
+Toggled.Parent = ToggledFo
+Toggled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggled.BackgroundTransparency = 1.000
+Toggled.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggled.BorderSizePixel = 0
+Toggled.Position = UDim2.new(0.635897458, 0, 0.115740739, 0)
+Toggled.Size = UDim2.new(0, 71, 0, 37)
+Toggled.Visible = false
+Toggled.Font = Enum.Font.FredokaOne
+Toggled.Text = "Auto Parry"
+Toggled.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggled.TextScaled = true
+Toggled.TextSize = 14.000
+Toggled.TextWrapped = true
+
+Effect.Name = "Effect"
+Effect.Parent = Frame
+Effect.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Effect.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Effect.BorderSizePixel = 0
+Effect.Position = UDim2.new(0.384615391, 0, 0.115740739, 0)
+Effect.Size = UDim2.new(0, 89, 0, 40)
+Effect.Font = Enum.Font.Unknown
+Effect.Text = "FE ANIMATIONS R15"
+Effect.TextColor3 = Color3.fromRGB(0, 0, 0)
+Effect.TextScaled = true
+Effect.TextSize = 14.000
+Effect.TextWrapped = true
+
+UICorner_4.Parent = Effect
+
+Troll.Name = "Troll"
+Troll.Parent = Frame
+Troll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Troll.BackgroundTransparency = 1.000
+Troll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Troll.BorderSizePixel = 0
+Troll.Position = UDim2.new(0.800000012, 0, 0.152777642, 0)
+Troll.Size = UDim2.new(0, 25, 0, 24)
+Troll.Visible = false
+Troll.Image = "rbxassetid://2005276185"
+
+OP.Name = "OP"
+OP.Parent = Frame
+OP.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+OP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OP.BorderSizePixel = 0
+OP.Position = UDim2.new(0.135897443, 0, 0.115740739, 0)
+OP.Size = UDim2.new(0, 89, 0, 40)
+OP.Font = Enum.Font.Unknown
+OP.Text = "FE HELICOPTER(Use With r6)"
+OP.TextColor3 = Color3.fromRGB(0, 0, 0)
+OP.TextScaled = true
+OP.TextSize = 14.000
+OP.TextWrapped = true
+
+UICorner_5.Parent = OP
+
+XD.Name = "XD"
+XD.Parent = Frame
+XD.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+XD.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XD.BorderSizePixel = 0
+XD.Position = UDim2.new(0.661538482, 0, 0.115740739, 0)
+XD.Size = UDim2.new(0, 89, 0, 40)
+XD.Font = Enum.Font.Unknown
+XD.Text = "FE R6 REANIM"
+XD.TextColor3 = Color3.fromRGB(0, 0, 0)
+XD.TextScaled = true
+XD.TextSize = 14.000
+XD.TextWrapped = true
+
+UICorner_6.Parent = XD
+
+Open.Name = "Open"
+Open.Parent = ElprosLibraryFE
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.486363649, 0)
+Open.Size = UDim2.new(0, 120, 0, 50)
+Open.Font = Enum.Font.SourceSansBold
+Open.Text = "OpenGui"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_7.Parent = Open
+
+Alert.Name = "Alert"
+Alert.Parent = ElprosLibraryFE
+Alert.BackgroundColor3 = Color3.fromRGB(198, 2, 2)
+Alert.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Alert.BorderSizePixel = 0
+Alert.Position = UDim2.new(0.339682549, 0, 0.0246913582, 0)
+Alert.Size = UDim2.new(0, 283, 0, 236)
+Alert.Visible = false
+Alert.Font = Enum.Font.SourceSans
+Alert.Text = "Alert:No Cooldown For Dash, Thunder Dash And Shadow Step"
+Alert.TextColor3 = Color3.fromRGB(0, 0, 0)
+Alert.TextScaled = true
+Alert.TextSize = 14.000
+Alert.TextWrapped = true
+
+UICorner_8.Parent = Alert
+
+-- Scripts:
+
+local function WDFUU_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	local Frame = script.Parent.Parent.Parent
+	local Button = script.Parent
+	local Text = Frame.TextLabel
+	
+	Button.MouseButton1Click:Connect(function()
+		Button.Visible = false
+		Frame.Visible = false
+		Text.Visible = false
+	end)
+end
+coroutine.wrap(WDFUU_fake_script)()
+local function ZNNPMDJ_fake_script() -- CheckMark.LocalScript 
+	local script = Instance.new('LocalScript', CheckMark)
+
+	local Button = script.Parent
+	local Troll = Button.Parent.Troll
+	local Text = Button.Parent.ToggledFo.Toggled
+	local bool = true
+	
+	Button.MouseButton1Click:Connect(function()
+		Button.Visible = false
+		Troll.Visible = true
+		Text.Text = "Auto Parry"
+	end)
+	
+end
+coroutine.wrap(ZNNPMDJ_fake_script)()
+local function UXKBZZ_fake_script() -- Effect.LocalScript 
+	local script = Instance.new('LocalScript', Effect)
+
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+	
+	end)
+end
+coroutine.wrap(UXKBZZ_fake_script)()
+local function AVLGXPL_fake_script() -- Troll.LocalScript 
+	local script = Instance.new('LocalScript', Troll)
+
+	local Button = script.Parent
+	local TextLabel = script.Parent.Parent.ToggledFo.Toggled
+	local Debounce = false
+	local Value = true
+	local Text = Button.Parent.ToggledFo.Toggled
+	local LP = game.Players.LocalPlayer
+	local Humanoid = LP.Character:WaitForChild("Humanoid")
+	
+	Button.MouseButton1Click:Connect(function(bool)
+		bool = false
+		
+		TextLabel.Text = "Auto Parry(toogled)"
+		if TextLabel.Text == "Auto Parry(toogled)" then
+			Button.Visible = false
+			script.Parent.Parent.CheckMark.Visible = true
+			bool = true
+			if bool == true then
+				local function startAutoParry()
+					local player = game.Players.LocalPlayer
+					local character = player.Character or player.CharacterAdded:Wait()
+					local replicatedStorage = game:GetService("ReplicatedStorage")
+					local runService = game:GetService("RunService")
+					local parryButtonPress = replicatedStorage.Remotes.ParryButtonPress
+					local ballsFolder = workspace:WaitForChild("Balls")
+	
+					print("Script successfully ran.")
+	
+					local function onCharacterAdded(newCharacter)
+						character = newCharacter
+					end
+	
+					player.CharacterAdded:Connect(onCharacterAdded)
+	
+					local focusedBall = nil  
+	
+					local function chooseNewFocusedBall()
+						local balls = ballsFolder:GetChildren()
+						focusedBall = nil
+						for _, ball in ipairs(balls) do
+							if ball:GetAttribute("realBall") == true then
+								focusedBall = ball
+								break
+							end
+						end
+					end
+	
+					chooseNewFocusedBall()
+	
+					local function timeUntilImpact(ballVelocity, distanceToPlayer, playerVelocity)
+						local directionToPlayer = (character.HumanoidRootPart.Position - focusedBall.Position).Unit
+						local velocityTowardsPlayer = ballVelocity:Dot(directionToPlayer) - playerVelocity:Dot(directionToPlayer)
+	
+						if velocityTowardsPlayer <= 0 then
+							return math.huge
+						end
+	
+						local distanceToBeCovered = distanceToPlayer - 40
+						return distanceToBeCovered / velocityTowardsPlayer
+					end
+	
+					local BASE_THRESHOLD = 0.15
+					local VELOCITY_SCALING_FACTOR = 0.002
+	
+					local function getDynamicThreshold(ballVelocityMagnitude)
+						local adjustedThreshold = BASE_THRESHOLD - (ballVelocityMagnitude * VELOCITY_SCALING_FACTOR)
+						return math.max(0.12, adjustedThreshold)
+					end
+	
+					local function checkBallDistance()
+						if not character:FindFirstChild("Highlight") then return end
+						local charPos = character.PrimaryPart.Position
+						local charVel = character.PrimaryPart.Velocity
+	
+						if focusedBall and not focusedBall.Parent then
+							chooseNewFocusedBall()
+						end
+	
+						if not focusedBall then return end
+	
+						local ball = focusedBall
+						local distanceToPlayer = (ball.Position - charPos).Magnitude
+	
+						if distanceToPlayer < 10 then
+							parryButtonPress:Fire()
+							return
+						end
+	
+						local timeToImpact = timeUntilImpact(ball.Velocity, distanceToPlayer, charVel)
+						local dynamicThreshold = getDynamicThreshold(ball.Velocity.Magnitude)
+	
+						if timeToImpact < dynamicThreshold then
+							parryButtonPress:Fire()
+						end
+					end
+					heartbeatConnection = game:GetService("RunService").Heartbeat:Connect(function()
+						checkBallDistance()
+					end)
+				end
+				startAutoParry()
+				
+				local function stopAutoParry()
+					if heartbeatConnection then
+						heartbeatConnection:Disconnect()
+						heartbeatConnection = nil
+					end
+				end
+				if TextLabel.Text == "Auto Parry" then
+					stopAutoParry()
+				end
+		end
+		end
+	end)
+		
+	
+	
+end
+coroutine.wrap(AVLGXPL_fake_script)()
+local function UPNO_fake_script() -- OP.LocalScript 
+	local script = Instance.new('LocalScript', OP)
+
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/helicopter/main/main"))()
+	
+	end)
+end
+coroutine.wrap(UPNO_fake_script)()
+local function AQDJXN_fake_script() -- XD.LocalScript 
+	local script = Instance.new('LocalScript', XD)
+
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua'),true))()
+	
+	end)
+end
+coroutine.wrap(AQDJXN_fake_script)()
+local function WIGK_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local Button = script.Parent
+	local Frame = script.Parent.Parent.Frame
+	local Frame2 = script.Parent.Parent.Swords
+	local X2 = Frame2.TextLabel.X
+	local Text2 = Frame2.TextLabel
+	local X = script.Parent.Parent.Frame.TextLabel.X
+	local Text = script.Parent.Parent.Frame.TextLabel
+	
+	
+	
+		
+	
+	Button.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+		X.Visible = true
+		Text.Visible = true
+		X2.Visible = true
+		Text2.Visible = true
+		end)
+	
+	
+end
+coroutine.wrap(WIGK_fake_script)()
+local function AYQSNQY_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	
+end
+coroutine.wrap(AYQSNQY_fake_script)()
+local function QCBNXLM_fake_script() -- Alert.LocalScript 
+	local script = Instance.new('LocalScript', Alert)
+
+	local Alert = script.Parent
+	while wait(0.05) do
+	if Alert.Visible == true then
+		Alert.BackgroundColor3 = Color3.new(1, 0.00392157, 0.00392157)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(0.74902, 0.74902, 0.74902)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(1, 0.00392157, 0.00392157)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(0.74902, 0.74902, 0.74902)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(1, 0.00392157, 0.00392157)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(0.74902, 0.74902, 0.74902)
+		wait(1)
+		Alert.BackgroundColor3 = Color3.new(0.74902, 0.74902, 0.74902)
+		wait(1)
+			Alert.Visible = false
+		end
+	end
+end
+coroutine.wrap(QCBNXLM_fake_script)()
