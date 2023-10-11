@@ -1,0 +1,51 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ElproSS = Instance.new("ScreenGui")
+local Troll = Instance.new("ImageLabel")
+local XD = Instance.new("TextLabel")
+
+--Properties:
+
+ElproSS.Name = "ElproSS"
+ElproSS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ElproSS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Troll.Name = "Troll"
+Troll.Parent = ElproSS
+Troll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Troll.BackgroundTransparency = 1.000
+Troll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Troll.BorderSizePixel = 0
+Troll.Position = UDim2.new(0.425833344, 0, -0.008641975, 0)
+Troll.Size = UDim2.new(0, 156, 0, 116)
+Troll.Image = "rbxassetid://2005276185"
+
+XD.Name = "XD"
+XD.Parent = ElproSS
+XD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XD.BackgroundTransparency = 1.000
+XD.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XD.BorderSizePixel = 0
+XD.Position = UDim2.new(0.416666657, 0, 0.145679012, 0)
+XD.Size = UDim2.new(0, 200, 0, 50)
+XD.Font = Enum.Font.FredokaOne
+XD.Text = "Made By Elpros"
+XD.TextColor3 = Color3.fromRGB(0, 0, 0)
+XD.TextScaled = true
+XD.TextSize = 14.000
+XD.TextWrapped = true
+
+-- Scripts:
+
+local function WGSJGL_fake_script() -- ElproSS.LocalScript 
+	local script = Instance.new('LocalScript', ElproSS)
+
+	if script.Parent.Enabled == true then
+		wait(3)
+		script.Parent:Destroy()
+	end
+end
+coroutine.wrap(WGSJGL_fake_script)()
