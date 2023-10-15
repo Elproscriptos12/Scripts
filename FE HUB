@@ -23,10 +23,12 @@ local XD = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local DestructedHex = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Open = Instance.new("TextButton")
+local FEMusicPlayerOnlyForPizza = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local Alert = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local Alert = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
 
 --Properties:
 
@@ -119,7 +121,7 @@ Effect.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Effect.BorderSizePixel = 0
 Effect.Position = UDim2.new(0.402564108, 0, 0.115740739, 0)
 Effect.Size = UDim2.new(0, 89, 0, 40)
-Effect.Font = Enum.Font.FredokaOne
+Effect.Font = Enum.Font.Unknown
 Effect.Text = "FE Animations R15"
 Effect.TextColor3 = Color3.fromRGB(0, 0, 0)
 Effect.TextScaled = true
@@ -146,7 +148,7 @@ OP.BorderColor3 = Color3.fromRGB(0, 0, 0)
 OP.BorderSizePixel = 0
 OP.Position = UDim2.new(0.135897443, 0, 0.115740739, 0)
 OP.Size = UDim2.new(0, 89, 0, 40)
-OP.Font = Enum.Font.FredokaOne
+OP.Font = Enum.Font.Unknown
 OP.Text = "FE Helicopter(Use With r6)"
 OP.TextColor3 = Color3.fromRGB(0, 0, 0)
 OP.TextScaled = true
@@ -162,7 +164,7 @@ XD.BorderColor3 = Color3.fromRGB(0, 0, 0)
 XD.BorderSizePixel = 0
 XD.Position = UDim2.new(0.661538482, 0, 0.115740739, 0)
 XD.Size = UDim2.new(0, 89, 0, 40)
-XD.Font = Enum.Font.FredokaOne
+XD.Font = Enum.Font.Unknown
 XD.Text = "FE R6 Reanim"
 XD.TextColor3 = Color3.fromRGB(0, 0, 0)
 XD.TextScaled = true
@@ -178,7 +180,7 @@ DestructedHex.BorderColor3 = Color3.fromRGB(0, 0, 0)
 DestructedHex.BorderSizePixel = 0
 DestructedHex.Position = UDim2.new(0.661538482, 0, 0.365740746, 0)
 DestructedHex.Size = UDim2.new(0, 89, 0, 40)
-DestructedHex.Font = Enum.Font.FredokaOne
+DestructedHex.Font = Enum.Font.Unknown
 DestructedHex.Text = "FE Destructed Hex Gui"
 DestructedHex.TextColor3 = Color3.fromRGB(0, 0, 0)
 DestructedHex.TextScaled = true
@@ -186,6 +188,22 @@ DestructedHex.TextSize = 14.000
 DestructedHex.TextWrapped = true
 
 UICorner_7.Parent = DestructedHex
+
+FEMusicPlayerOnlyForPizza.Name = "FE Music Player(Only For Pizza)"
+FEMusicPlayerOnlyForPizza.Parent = Frame
+FEMusicPlayerOnlyForPizza.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+FEMusicPlayerOnlyForPizza.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FEMusicPlayerOnlyForPizza.BorderSizePixel = 0
+FEMusicPlayerOnlyForPizza.Position = UDim2.new(0.402564108, 0, 0.365740746, 0)
+FEMusicPlayerOnlyForPizza.Size = UDim2.new(0, 89, 0, 40)
+FEMusicPlayerOnlyForPizza.Font = Enum.Font.Unknown
+FEMusicPlayerOnlyForPizza.Text = "FE Music Player(Only For Pizza)"
+FEMusicPlayerOnlyForPizza.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEMusicPlayerOnlyForPizza.TextScaled = true
+FEMusicPlayerOnlyForPizza.TextSize = 14.000
+FEMusicPlayerOnlyForPizza.TextWrapped = true
+
+UICorner_8.Parent = FEMusicPlayerOnlyForPizza
 
 Open.Name = "Open"
 Open.Parent = ElprosLibraryFE
@@ -201,7 +219,7 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 
-UICorner_8.Parent = Open
+UICorner_9.Parent = Open
 
 Alert.Name = "Alert"
 Alert.Parent = ElprosLibraryFE
@@ -218,11 +236,11 @@ Alert.TextScaled = true
 Alert.TextSize = 14.000
 Alert.TextWrapped = true
 
-UICorner_9.Parent = Alert
+UICorner_10.Parent = Alert
 
 -- Scripts:
 
-local function TXOTOCP_fake_script() -- X.LocalScript 
+local function WYICJEU_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	local Frame = script.Parent.Parent.Parent
@@ -235,8 +253,8 @@ local function TXOTOCP_fake_script() -- X.LocalScript
 		Text.Visible = false
 	end)
 end
-coroutine.wrap(TXOTOCP_fake_script)()
-local function HCKJR_fake_script() -- CheckMark.LocalScript 
+coroutine.wrap(WYICJEU_fake_script)()
+local function DKBID_fake_script() -- CheckMark.LocalScript 
 	local script = Instance.new('LocalScript', CheckMark)
 
 	local Button = script.Parent
@@ -251,8 +269,8 @@ local function HCKJR_fake_script() -- CheckMark.LocalScript
 	end)
 	
 end
-coroutine.wrap(HCKJR_fake_script)()
-local function PSBMYII_fake_script() -- Effect.LocalScript 
+coroutine.wrap(DKBID_fake_script)()
+local function WPABTHP_fake_script() -- Effect.LocalScript 
 	local script = Instance.new('LocalScript', Effect)
 
 	local Button = script.Parent
@@ -262,8 +280,8 @@ local function PSBMYII_fake_script() -- Effect.LocalScript
 	
 	end)
 end
-coroutine.wrap(PSBMYII_fake_script)()
-local function VRAH_fake_script() -- Troll.LocalScript 
+coroutine.wrap(WPABTHP_fake_script)()
+local function ASQZF_fake_script() -- Troll.LocalScript 
 	local script = Instance.new('LocalScript', Troll)
 
 	local Button = script.Parent
@@ -382,8 +400,8 @@ local function VRAH_fake_script() -- Troll.LocalScript
 	
 	
 end
-coroutine.wrap(VRAH_fake_script)()
-local function XMLB_fake_script() -- OP.LocalScript 
+coroutine.wrap(ASQZF_fake_script)()
+local function QLGQ_fake_script() -- OP.LocalScript 
 	local script = Instance.new('LocalScript', OP)
 
 	local Button = script.Parent
@@ -393,8 +411,8 @@ local function XMLB_fake_script() -- OP.LocalScript
 	
 	end)
 end
-coroutine.wrap(XMLB_fake_script)()
-local function LUGNEQ_fake_script() -- XD.LocalScript 
+coroutine.wrap(QLGQ_fake_script)()
+local function LMWWX_fake_script() -- XD.LocalScript 
 	local script = Instance.new('LocalScript', XD)
 
 	local Button = script.Parent
@@ -404,8 +422,8 @@ local function LUGNEQ_fake_script() -- XD.LocalScript
 	
 	end)
 end
-coroutine.wrap(LUGNEQ_fake_script)()
-local function DDWF_fake_script() -- DestructedHex.LocalScript 
+coroutine.wrap(LMWWX_fake_script)()
+local function MKUCU_fake_script() -- DestructedHex.LocalScript 
 	local script = Instance.new('LocalScript', DestructedHex)
 
 	local Button = script.Parent
@@ -415,8 +433,18 @@ local function DDWF_fake_script() -- DestructedHex.LocalScript
 	
 	end)
 end
-coroutine.wrap(DDWF_fake_script)()
-local function SEQPSL_fake_script() -- Open.LocalScript 
+coroutine.wrap(MKUCU_fake_script)()
+local function BILQXO_fake_script() -- FEMusicPlayerOnlyForPizza.LocalScript 
+	local script = Instance.new('LocalScript', FEMusicPlayerOnlyForPizza)
+
+	local Button = script.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/pizza-place-audio-player/main/script"))()
+	end)
+end
+coroutine.wrap(BILQXO_fake_script)()
+local function OOJYAG_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local Button = script.Parent
@@ -436,14 +464,14 @@ local function SEQPSL_fake_script() -- Open.LocalScript
 	
 	
 end
-coroutine.wrap(SEQPSL_fake_script)()
-local function SXLYDD_fake_script() -- Open.LocalScript 
+coroutine.wrap(OOJYAG_fake_script)()
+local function MEMDCOP_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	
 end
-coroutine.wrap(SXLYDD_fake_script)()
-local function ZMLNGZ_fake_script() -- Alert.LocalScript 
+coroutine.wrap(MEMDCOP_fake_script)()
+local function REBJ_fake_script() -- Alert.LocalScript 
 	local script = Instance.new('LocalScript', Alert)
 
 	local Alert = script.Parent
@@ -467,4 +495,4 @@ local function ZMLNGZ_fake_script() -- Alert.LocalScript
 		end
 	end
 end
-coroutine.wrap(ZMLNGZ_fake_script)()
+coroutine.wrap(REBJ_fake_script)()
